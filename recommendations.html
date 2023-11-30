@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>recommended</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="Communites/communities.js"></script>
+    <script src="/route.js"></script>
+  </head>
+  <body
+    style="
+      object-fit: scale-down;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fdb927;
+    "
+  >
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)"
+          ><img
+          src="/images/AggieMe.png"
+            alt="logo"
+            height="75"
+            style="border-radius: 50%"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Communites/communityFeed.html">Community Feed</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/UserAccount/user.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="UserAccount/FAQ.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- recommendations -->
+
+    <div class="text-center" mt-5>
+      <h3 style="text-align: center; color: black; font-weight: bold; font-style: italic">Community Portal</h3>
+
+      <button class="btn btn-primary" onclick="rc()">
+        Click here to view Recommended  Communites
+      </button>
+      
+      <br>
+      <br>
+      <button class="btn btn-primary" onclick="stored()">
+        Click here to view all Communites
+      </button>
+      <br>
+
+      <h4 id="recommendations"></h4>
+      <div class="center">
+        <!-- abroad -->
+        <h3 id="ac"style="display: none; font-weight: bold; font-style: italic">Abroad Community</h3>
+        <img  style="display: none; " id="international" src="Communites/images/abroad.jpeg" alt="">
+        <br>
+        <button
+        type="button"
+            id="btn1"
+              style="display: none ;"
+              class="btn btn-lg btn-primary btn-block"
+              onclick="join()"
+            >
+              Join
+            </button>
+      <br>
+
+          <!-- entreprenuer -->
+          <h3 id="entrepreneurcommunity"style="display: none; font-weight: bold; font-style: italic">Entreprenuer Community</h3>
+        <img  style="display: none; " id="business" src="Communites/images/entrepreneur.png" alt="">
+        <br>
+        <button
+        type="button"
+            id="btn2"
+              style="display: none ;"
+              class="btn btn-lg btn-primary btn-block"
+              onclick="join()"
+            >
+              Join
+            </button>
+          <br>
+
+          <!-- greek life -->
+          <h3 id="gc"style="display: none; font-weight: bold; font-style: italic">Greek Life Community</h3>
+        <img  style="display: none; " id="greek" src="Communites/images/greeklife.jpeg" alt="">
+        <br>
+        <button
+        type="button"
+            id="btn3"
+              style="display: none ;"
+              class="btn btn-lg btn-primary btn-block"
+              onclick="join()"
+            >
+              Join
+            </button>
+
+          <br>
+            <!-- enginneering -->
+        <h3 id="ec" style="display: none; font-weight: bold; font-style: italic">Engineering Community</h3>
+        <img class = "text-center" style="display: none;" id="engineer" src="Communites/images/entrepreneur.png" alt="">
+        <br>
+        <button
+            type="button"
+              id="btn4"
+              style="display: none ;"
+              class="btn btn-lg btn-primary btn-block"
+              onclick="join()"
+            >
+              Join
+            </button>
+      <br>
+            <!-- event planning  -->
+        <h3 id ="epc"style="display: none; font-weight: bold; font-style: italic">Event Planning Community</h3>
+        <img class = "text-center" style="display: none;" id="event-planner" src="Communites/images/planning.jpeg" alt="">
+        <br>
+        <button
+              type="button"
+              id="btn5"
+              style="display: none; font-weight: bold; font-style: italic"
+              class="btn btn-lg btn-primary btn-block"
+              onclick="join()"
+            >
+              Join
+            </button>
+            <br>
+
+            <!-- fitness/Health -->
+            <h3 id ="F&H" style="display: none; font-weight: bold; font-style: italic">Fitness and Health Community</h3>
+            <img class = "text-center" style="display: none;" id="healthy" src="Communites/images/health.jpeg" alt="">
+            <br>
+            <button
+              type="button"
+              id="btn6"
+              style="display: none ;"
+              class="btn btn-lg btn-primary btn-block"
+              onclick="join()"
+            >
+              Join
+            </button>
+            <br>
+
+            <!-- spirirtual -->
+            <h3 id ="spiritual" style="display: none; font-weight: bold; font-style: italic">Spiritual Community</h3>
+            <img class = "text-center" style="display: none;" id="spirit" src="Communites/images/spiritual.jpeg" alt="">
+            <br>
+            <button
+              type="button"
+              id="btn7"
+              style="display: none ;"
+              class="btn btn-lg btn-primary btn-block"
+              onclick="join()"
+            >
+              Join
+            </button>
+            <br>
+
+            <!-- sports -->
+            <h3 id ="sports" style="display: none; font-weight: bold; font-style: italic">Sports Community</h3>
+            <img class = "text-center" style="display: none;" id="athlete" src="Communites/images/Sports.png" alt="">
+            <br>
+            <button
+              type="button"
+              id="btn8"
+              style="display: none ;"
+              class="btn btn-lg btn-primary btn-block"
+              onclick="join()"
+            >
+              Join
+            </button>
+
+            <br>
+            <!-- artist -->
+            <h3 id ="art" style="display: none; font-weight: bold; font-style: italic">Artist Community</h3>
+            <img class = "text-center" style="display: none;" id="artist" src="Communites/images/Art.png" alt="">
+            <br>
+            <button
+              type="button"
+              id="btn9"
+              style="display: none ;"
+              class="btn btn-lg btn-primary btn-block"
+              onclick="join()"
+            >
+              Join
+            </button>
+            <br>
+            <!-- Book Community  -->
+            <h3 id ="book" style="display: none; font-weight: bold; font-style: italic">Book Community</h3>
+            <img class = "text-center" style="display: none;" id="books" src="Communites/images/Books.png" alt="">
+            <br>
+            <button
+              type="button"
+              id="btn10"
+              style="display: none ;"
+              class="btn btn-lg btn-primary btn-block"
+              onclick="join()"
+            >
+              Join
+            </button>
+
+
+
+
+      </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

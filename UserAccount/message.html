@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Message</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="/app.js"></script>
+  </head>
+  <body style="background-color: #fdb927">
+    <div class="text-center" mt-5>
+      <form style="max-width: 400px; margin: auto">
+        <img
+          class="mt-4 mb-4"
+          src="/images/AggieMe.png"
+          height="200"
+          alt="logo"
+          style="border-radius: 50%"
+        />
+        <h3 style="font-weight: bold;
+        font-style: italic;">Message</h3>
+      </div>
+
+        </form>
+        <div
+        class="container-fluid"
+        style="
+            background-color: white;
+            border-radius: 18px;
+            padding: 15px;
+            box-shadow: 5px 10px 8px #888888;
+          "
+        >
+          <!--name-->
+          <input
+            type="text"
+            id="to"
+            class="form-control"
+            placeholder="To:"
+            required
+            autofocus
+          />
+
+          <!--Last name input box -->
+          <label for="lastname" class="sr-only"></label>
+          <input
+            type="text"
+            id="message"
+            placeholder="Message"
+            class="form-control"
+          />
+          <br />
+
+          <div class="text-center">
+            <button
+              class="btn btn-lg btn-primary"
+              type="button"
+              onclick="messageSent();"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SignUp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="/route.js"></script>
+  </head>
+  <body style="background-color: #fdb927">
+    <div class="text-center" mt-5>
+      <form style="max-width: 400px; margin: auto">
+        <img
+          class="mt-4 mb-4"
+          src="/images/AggieMe.png"
+          height="200"
+          alt="logo"
+          style="border-radius: 50%"
+        />
+        <h3 style="font-weight: bold;
+        font-style: italic;">Create your account</h3>
+      </div>
+
+        </form>
+        <div
+        class="container-fluid"
+        style="
+            background-color: white;
+            border-radius: 18px;
+            padding: 15px;
+            box-shadow: 5px 10px 8px #888888;
+          "
+        >
+          <!--First name input box -->
+          <input
+            type="text"
+            id="firstname"
+            class="form-control"
+            placeholder="First Name"
+            required
+            autofocus
+          />
+
+          <!--Last name input box -->
+          <label for="lastname" class="sr-only"></label>
+          <input
+            type="text"
+            id="lastname"
+            placeholder="Last Name"
+            class="form-control"
+          />
+
+          <!--Major input box -->
+          <label for="userMajor" class="sr-only"></label>
+          <input
+            type="text"
+            id="major"
+            placeholder="Major"
+            class="form-control"
+          />
+
+          <!--classification input box -->
+          <label for="userClassification" class="sr-only"></label>
+          <input
+            type="text"
+            id="classification"
+            placeholder="Classification (i.e Freshman, Sophomore, Junior, Senior) "
+            class="form-control"
+          />
+
+          <!--username input box -->
+          <label for="username" class="sr-only"></label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Username"
+            class="form-control"
+          />
+
+          <!--password input box-->
+          <label for="password" class="sr-only"></label>
+          <input
+            type="password"
+            id="userPassword"
+            placeholder="Password "
+            class="form-control"
+          />
+          <!-- confirm password -->
+          <label for="password" class="sr-only"></label>
+          <input
+            type="password"
+            id="passwordConfirm"
+            placeholder="Confirm password"
+            class="form-control"
+          />
+
+          <!--email input field-->
+          <label for="email" class="sr-only"></label>
+          <input
+            type="text"
+            id="email"
+            placeholder="Email "
+            class="form-control"
+          />
+          <br />
+
+          <div class="text-center">
+            <button
+              class="btn btn-lg btn-primary"
+              type="button"
+              onclick="takeSurvey();"
+            >
+              Take Survey
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

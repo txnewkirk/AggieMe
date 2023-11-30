@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Community Feed</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+  />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="/app.js"></script>
+  </head>
+  <body
+    style="
+      object-fit: scale-down;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+    "
+  >
+  <!-- new post area  -->
+  <div id="newDiv"class="write-post-container"  style="background-color: white; display: none;">
+    <div class="user-profile">
+        <p style="font-size: 50px">&#128100 </p>
+        <div>
+            <p>Ty Newkirk</p>
+            <p id="date"> </p>
+            <p id="time"></p>
+            <small>Public <i class="fas fa-caret-down"></i></small>
+
+        </div>
+    </div>
+    <div class="post-input-container">
+        <textarea id ="newPost" rows="3"></textarea>
+        <!-- <div id=""><a href="/app.js">&#128077;</a></div> -->
+        <div id="like">
+            <button onclick="like()">&#128077</button>
+            <p id="thumbsup" style="display: none;"> &#128077 </p>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<!-- current post-->
+  <div id="current" class="write-post-container"  style="background-color: white;">
+    <div class="user-profile">
+        <p style="font-size: 50px">&#128100 </p>
+        <div>
+            <p>Ty Newkirk</p>
+            <small>Public <i class="fas fa-caret-down"></i></small>
+        </div>
+    </div>
+    <div class="post-input-container">
+        <textarea  id ="post" rows="3" placeholder="What's up Aggie ?"></textarea>
+        <div class="add-post-links">
+            <button class="btn btn-lg btn-primary btn-block" onclick="post()">Post &#128236;</button>
+
+        </div>
+    </div>
+</div>
+
+<div style="background-color: white;"class="post-container" >
+    <div  class="post-row">
+        <div  class="user-profile"  >
+            <p style="font-size: 50px">&#128100 </p>
+            <div>
+                <p>Josh White</p>
+                <span>June 24 2021, 13:40 pm</span>
+            </div>
+        </div>
+        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+    </div>
+    <p class="post-text">Subscribe <span>@Easy Tutorials</span> YouTube channel to watch more videos on website developement and UI designs. <a href="">#EasyTutorials</a> <a href="">#YouTubeChannel</a></p>
+    <div class="post-row">
+        <div class="activity-icons">
+            <div><a href="">&#128077;</a>90</div>
+        </div>
+        <div class="post-profile-icon">
+            <i class="fas fa-caret-down"></i>
+        </div>
+    </div>
+</div>
+
+
+<div style="background-color: white;"class="post-container">
+    <div class="post-row">
+        <div class="user-profile">
+            <p style="font-size: 50px">&#128100 </p>
+            <div>
+                <p>John Nicholson</p>
+                <span>June 24 2021, 13:40 pm</span>
+            </div>
+        </div>
+        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+    </div>
+    <p class="post-text">Like and share this video with friends, tag <span>@Easy Tutorials</span> facebook page on your post. Ask you doubts in the comments <a href="">#EasyTutorials</a> <a href="">#Subscribe</a></p>
+  
+    <div class="post-row">
+        <div class="activity-icons">
+            <div><a href="">&#128077;</a>120</div>
+        </div>
+
+        <div class="post-profile-icon">
+             <i class="fas fa-caret-down"></i>
+        </div>
+    </div>
+</div>
+
+</div>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"
+></script>
+  </body>
+</html>
